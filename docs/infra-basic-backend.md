@@ -664,10 +664,11 @@ ubuntu@ubuntu:~/docker/08.ntier$ docker-compose up -d
 localhost:8080/api/depts
 ```
 
-- 브라우저
-- ![](./images/Pasted%20image%2020260326233643.png)
-- postman
-- ![](./images/Pasted%20image%2020260326233818.png)
+### 브라우저
+![](./images/Pasted%20image%2020260326233643.png)
+
+### Postman
+![](./images/Pasted%20image%2020260326233818.png)
 
 (확인 사항)
 - 해당 URL로 접속했을 때 dept 테이블의 모든 데이터가 출력되는지
@@ -734,26 +735,27 @@ ubuntu@ubuntu:~/docker/08.ntier$ tree -a -L 3
 
 즉, Dockerfile을 통해 이미지 생성 방식을 고정하고, 실행 시에는 동일한 이미지를 사용함으로써 환경 차이에 따른 문제를 최소화하는 것이 실무적인 접근 방식이다.
 
-1. Dockerfile을 통해 image 생성
+### 1. Dockerfile을 통해 image 생성
 ```
 ubuntu@ubuntu:~/docker/08.ntier$ cd infra-basic-backend/infra-basic-backend/
 
 ubuntu@ubuntu:~/docker/08.ntier/infra-basic-backend/infra-basic-backend$ docker build -t backend:v1.0 .
 ```
 
-2. image가 생성됬는지 확인
+### 2. image가 생성됬는지 확인
 ```
 ubuntu@ubuntu:~/docker/08.ntier/infra-basic-backend/infra-basic-backend$ docker images 
 REPOSITORY   TAG       IMAGE ID       CREATED          SIZE
 backend      v1.0      89bfe5a76099   13 seconds ago   239MB
 ```
 
-3. 레지스트리(Docker hub)에 생성한 image 올리기
+### 3. 레지스트리(Docker hub)에 생성한 image 올리기
 
-3-1.  Docker Hub 접속 → 레포지토리 생성
-- ![](./images/Pasted%20image%2020260327120005.png)
+#### 3-1.  Docker Hub 접속 → 레포지토리 생성
 
-3-2. docker hub에 image 올리기
+![](./images/Pasted%20image%2020260327120005.png)
+
+#### 3-2. docker hub에 image 올리기
 ```
 < image에 Hub 태그 추가 >
 예) docker tag <로컬이미지명> <DockerHub_ID>/<Repository명>:<태그>
@@ -772,8 +774,9 @@ backend                            v1.0      89bfe5a76099   17 minutes ago   239
 ▶ docker push containerxox/infra-basic-backend:v1.0
 ```
 
-3-3.  image가 Docker hub에 push 된 것을 확인
-- ![](./images/Pasted%20image%2020260327120630.png)
+#### 3-3.  image가 Docker hub에 push 된 것을 확인
+
+![](./images/Pasted%20image%2020260327120630.png)
 
 추가) 
 - 서버에서  image를 pull하고 싶다면
