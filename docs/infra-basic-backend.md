@@ -16,14 +16,16 @@ mkdir -p /home/ubuntu/docker/08.ntier cd /home/ubuntu/docker/08.ntier mkdir -p d
 ![](./images/Pasted%20image%2020260326164923.png)
 
 - 로컬에 git clone
-- ![](./images/Pasted%20image%2020260326164858.png)
+
+![](./images/Pasted%20image%2020260326164858.png)
 
 
 ## 2. Spring Boot 프로젝트
 
-- 2-1. 프로젝트 세팅
-- ![](./images/Pasted%20image%2020260326171551.png)
-- ![](./images/Pasted%20image%2020260326171555.png)
+### 2-1. 프로젝트 세팅
+
+![](./images/Pasted%20image%2020260326171551.png)
+![](./images/Pasted%20image%2020260326171555.png)
 
 ```
 src/main/java/com/example/backend
@@ -167,11 +169,11 @@ DB가 같은 호스트에서 실행되므로 `localhost`를 사용한다.
 애플리케이션에서 DB에 접근할 때 `localhost` 대신
 `docker-compose에 정의된 MySQL 컨테이너의 서비스 이름`을 사용해야 한다.**
 
-- 2-2) git push
+### 2-2) git push
 
 ## 3. 우분투에 git clone
 
-- 3-1. (git 설치되지 않은 경우) git 설치
+### 3-1. (git 설치되지 않은 경우) git 설치
 ```
 ▶ which git을 했을때 아무것도 출력되지 않음 = git 설치 X 상태
 
@@ -184,7 +186,7 @@ ubuntu@ubuntu:~/docker/08.ntier$ git --version
 git version 2.43.0
 ```
 
-- 3-2. git clone
+### 3-2. git clone
 ```
 git clone <레포지토리 주소>
 ```
@@ -670,7 +672,7 @@ localhost:8080/api/depts
 ### Postman
 ![](./images/Pasted%20image%2020260326233818.png)
 
-(확인 사항)
+### 확인 사항
 - 해당 URL로 접속했을 때 dept 테이블의 모든 데이터가 출력되는지
 
 > 모든 설정이 정상이라면,
@@ -686,7 +688,7 @@ localhost:8080/api/depts
 ```
 
 
-🟪 전체 구조
+### 🟪 전체 구조
 ```
 ubuntu@ubuntu:~/docker/08.ntier$ tree -a -L 3
 .
@@ -785,7 +787,7 @@ docker pull containerxox/infra-basic-backend:v1.0
 ```
 
 
-4. docker-compose.yml 수정
+### 4. docker-compose.yml 수정
 ```yml
 services:
   db:
@@ -831,7 +833,7 @@ networks:
     driver: bridge
 ```
 
-5. docker-compose.yml을 통해 서비스 시작
+### 5. docker-compose.yml을 통해 서비스 시작
 ```
 ubuntu@ubuntu:~/docker/08.ntier$ docker-compose up -d 
 ```
