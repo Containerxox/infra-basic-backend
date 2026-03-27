@@ -22,8 +22,8 @@ mkdir -p /home/ubuntu/docker/08.ntier cd /home/ubuntu/docker/08.ntier mkdir -p d
 ## 2. Spring Boot 프로젝트
 
 - 2-1. 프로젝트 세팅
-![](./images/Pasted%20image%2020260326171551.png)
-![](./images/Pasted%20image%2020260326171555.png)
+- ![](./images/Pasted%20image%2020260326171551.png)
+- ![](./images/Pasted%20image%2020260326171555.png)
 
 ```
 src/main/java/com/example/backend
