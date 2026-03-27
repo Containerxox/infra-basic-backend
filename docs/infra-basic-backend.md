@@ -13,7 +13,7 @@ mkdir -p /home/ubuntu/docker/08.ntier cd /home/ubuntu/docker/08.ntier mkdir -p d
 ## 1. git repository 생성 후 git clone
 
 - `infra-basic-backend` 이름으로 git repository 생성
-![[Pasted image 20260326164923.png]]
+![](./images/Pasted%20image%2020260326164923.png)
 
 - 로컬에 git clone
 ![[Pasted image 20260326164858.png]]
