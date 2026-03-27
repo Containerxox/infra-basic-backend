@@ -16,14 +16,14 @@ mkdir -p /home/ubuntu/docker/08.ntier cd /home/ubuntu/docker/08.ntier mkdir -p d
 ![](./images/Pasted%20image%2020260326164923.png)
 
 - 로컬에 git clone
-![[Pasted image 20260326164858.png]]
+![](./images/Pasted%20image%2020260326164858.png)
 
 
 ## 2. Spring Boot 프로젝트
 
 - 2-1. 프로젝트 세팅
-![[Pasted image 20260326171551.png]]
-![[Pasted image 20260326171555.png]]
+![](./images/Pasted%20image%2020260326171551.png)
+![](./images/Pasted%20image%2020260326171555.png)
 
 ```
 src/main/java/com/example/backend
@@ -665,9 +665,9 @@ localhost:8080/api/depts
 ```
 
 - 브라우저
-![[Pasted image 20260326233643.png]]
+![](./images/Pasted%20image%2020260326233643.png)
 - postman
-![[Pasted image 20260326233818.png]]
+![](./images/Pasted%20image%2020260326233818.png)
 
 (확인 사항)
 - 해당 URL로 접속했을 때 dept 테이블의 모든 데이터가 출력되는지
@@ -750,7 +750,7 @@ backend      v1.0      89bfe5a76099   13 seconds ago   239MB
 
 3. 레지스트리(Docker hub)에 생성한 image 올리기
 	3-1.  Docker Hub 접속 → 레포지토리 생성
-![[Pasted image 20260327120005.png]]
+![](./images/Pasted%20image%2020260327120005.png)
 	3-2. docker hub에 image 올리기
 ```
 < image에 Hub 태그 추가 >
@@ -771,7 +771,7 @@ backend                            v1.0      89bfe5a76099   17 minutes ago   239
 ```
 
 3-3.  image가 Docker hub에 push 된 것을 확인
-![[Pasted image 20260327120630.png]]
+![](./images/Pasted%20image%2020260327120630.png)
 
 추가) 
 - 서버에서  image를 pull하고 싶다면
