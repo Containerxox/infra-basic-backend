@@ -1,4 +1,4 @@
-# 02. N-tier Application 구성 (Spring Boot + MySQL)
+# 01. N-tier Application 구성 (Spring Boot + MySQL)
 
 - Docker를 활용하여 **Spring Boot 백엔드 서버와 MySQL DB를 컨테이너로 구성**하는 실무 아키텍처
 - 서비스 간 통신은 **사용자 정의 네트워크 + 컨테이너 이름(DNS)** 으로 처리
