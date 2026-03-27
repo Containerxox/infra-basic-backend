@@ -749,8 +749,10 @@ backend      v1.0      89bfe5a76099   13 seconds ago   239MB
 ```
 
 3. 레지스트리(Docker hub)에 생성한 image 올리기
+
 3-1.  Docker Hub 접속 → 레포지토리 생성
 ![](./images/Pasted%20image%2020260327120005.png)
+
 3-2. docker hub에 image 올리기
 ```
 < image에 Hub 태그 추가 >
